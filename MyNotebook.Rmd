@@ -1,0 +1,20 @@
+---
+title: "Non-Linear Models"
+output:
+  html_document:
+    df_print: paged
+---
+
+When creating non linear models - you must remember the Model Flexibility vs Error graph - ie there comes a point at which the model overfits the data in the dataset and loses its prediction accuracy
+
+```{r setup}
+source("https://bioconductor.org/biocLite.R")
+biocLite("EBImage")
+library(EBImage)
+```
+
+```{r predictionimage}
+img = readImage("prediction_accuracy.png")
+display(img, method = "raster")
+
+```
